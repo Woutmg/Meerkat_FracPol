@@ -1,0 +1,797 @@
+
+========================================================================
+Wed 16-03-2022 18:25:48:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Wed 16-03-2022 18:25:48:: INFO    : PyBDSF version 1.9.1
+Wed 16-03-2022 18:25:48:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        output_all           = True
+Wed 16-03-2022 18:25:48:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Wed 16-03-2022 18:25:48:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Wed 16-03-2022 18:25:48:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Wed 16-03-2022 18:25:48:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Wed 16-03-2022 18:25:48:: USERINFO: Number of channels ...................... : 1
+Wed 16-03-2022 18:25:48:: USERINFO: Number of Stokes parameters ............. : 1
+Wed 16-03-2022 18:25:48:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Wed 16-03-2022 18:25:48:: INFO    : Equinox of image is 2000.000000.
+Wed 16-03-2022 18:25:48:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Wed 16-03-2022 18:25:49:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Wed 16-03-2022 18:25:49:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Wed 16-03-2022 18:25:53:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Wed 16-03-2022 18:25:53:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Wed 16-03-2022 18:25:53:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Wed 16-03-2022 18:25:53:: INFO    : Estimated bmpersrc_th =   18.69
+Wed 16-03-2022 18:25:53:: INFO    : Parameter confused is True
+Wed 16-03-2022 18:25:53:: USERINFO: --> Calculating background rms and mean images
+Wed 16-03-2022 18:25:53:: INFO    : Estimated size of brightest source (pixels) = 5
+Wed 16-03-2022 18:25:54:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Wed 16-03-2022 18:26:01:: USERINFO: Derived rms_box (box size, step size) ... : (541, 180) pixels
+Wed 16-03-2022 18:26:01:: INFO    : Background rms and mean images computed
+Wed 16-03-2022 18:26:01:: USERINFO: --> Variation in rms image significant
+Wed 16-03-2022 18:26:01:: USERINFO: --> Using 2D map for background rms
+Wed 16-03-2022 18:26:01:: USERINFO: --> Variation in mean image significant
+Wed 16-03-2022 18:26:01:: USERINFO: --> Using 2D map for background mean
+Wed 16-03-2022 18:26:01:: USERINFO: Min/max values of background rms map .... : (2.20e-06, 1.74e-05) Jy/beam
+Wed 16-03-2022 18:26:01:: USERINFO: Min/max values of background mean map ... : (1.37e-05, 6.11e-05) Jy/beam
+Wed 16-03-2022 18:26:02:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Wed 16-03-2022 18:26:03:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Wed 16-03-2022 18:26:04:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Wed 16-03-2022 18:26:04:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Wed 16-03-2022 18:26:04:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Wed 16-03-2022 18:26:04:: USERINFO: Minimum number of pixels per island ..... : 14
+Wed 16-03-2022 18:26:05:: USERINFO: Number of islands found ................. : 214
+Wed 16-03-2022 18:38:06:: USERINFO: Total number of Gaussians fit to image .. : 363
+Wed 16-03-2022 18:38:06:: USERINFO: Total flux density in model ............. : 0.090 Jy
+Wed 16-03-2022 18:38:06:: WARNING : Total flux density in model is 0.01 times sum of pixels in input image. Large residuals may remain.
+Wed 16-03-2022 18:38:06:: USERINFO: --> Grouping Gaussians into sources
+Wed 16-03-2022 18:38:15:: USERINFO: Number of sources formed from Gaussians   : 235
+Wed 16-03-2022 18:38:15:: WARNING : All Gaussians were flagged for the following islands:
+                                        Island #0 (x=1, y=3591)
+                                        Island #4 (x=4, y=3605)
+                                        Island #6 (x=25, y=3616)
+                                        Island #8 (x=39, y=1821)
+                                        Island #10 (x=51, y=2)
+                                        Island #12 (x=54, y=48)
+                                        Island #13 (x=57, y=27)
+                                        Island #15 (x=68, y=42)
+                                        Island #41 (x=898, y=2061)
+                                        Island #42 (x=901, y=2104)
+                                        Island #46 (x=954, y=2006)
+                                        Island #49 (x=959, y=1913)
+                                        Island #50 (x=964, y=2118)
+                                        Island #52 (x=992, y=2061)
+                                        Island #55 (x=1151, y=1214)
+                                        Island #65 (x=1274, y=1543)
+                                        Island #66 (x=1279, y=1761)
+                                        Island #67 (x=1301, y=1562)
+                                        Island #68 (x=1293, y=1768)
+                                        Island #69 (x=1299, y=1737)
+                                        Island #70 (x=1312, y=1777)
+                                        Island #72 (x=1343, y=1694)
+                                        Island #76 (x=1388, y=1053)
+                                        Island #81 (x=1532, y=729)
+                                        Island #85 (x=1539, y=750)
+                                        Island #86 (x=1542, y=1114)
+                                        Island #89 (x=1562, y=1091)
+                                        Island #90 (x=1577, y=690)
+                                        Island #91 (x=1580, y=1098)
+                                        Island #92 (x=1594, y=1066)
+                                        Island #93 (x=1593, y=1078)
+                                        Island #95 (x=1675, y=1484)
+                                        Island #98 (x=1691, y=2501)
+                                        Island #99 (x=1741, y=1843)
+                                        Island #104 (x=1767, y=1895)
+                                        Island #105 (x=1766, y=1510)
+                                        Island #106 (x=1786, y=1500)
+                                        Island #107 (x=1795, y=1490)
+                                        Island #108 (x=1804, y=1804)
+                                        Island #109 (x=1814, y=1823)
+                                        Island #111 (x=1809, y=1794)
+                                        Island #113 (x=1817, y=1406)
+                                        Island #115 (x=1814, y=1853)
+                                        Island #117 (x=1826, y=1961)
+                                        Island #125 (x=1961, y=2238)
+                                        Island #129 (x=2019, y=1545)
+                                        Island #130 (x=2024, y=1620)
+                                        Island #133 (x=2037, y=3218)
+                                        Island #134 (x=2046, y=3206)
+                                        Island #135 (x=2047, y=3247)
+                                        Island #145 (x=2320, y=1336)
+                                        Island #154 (x=2511, y=729)
+                                        Island #162 (x=2670, y=3582)
+                                        Island #175 (x=3030, y=2191)
+                                        Island #177 (x=3045, y=2852)
+                                        Island #193 (x=3390, y=280)
+                                        Island #202 (x=3574, y=10)
+                                        Island #205 (x=3588, y=3605)
+                                        Island #211 (x=3607, y=66)
+                                        Island #212 (x=3611, y=48)
+                                        Island #213 (x=3616, y=34)
+                                    Please check these islands. If they are valid islands and
+                                    should be fit, try adjusting the flagging options (use
+                                    show_fit with "ch0_flagged=True" to see the flagged Gaussians)
+                                    or enabling the wavelet module (with "atrous_do=True").
+                                    To include empty islands in output source catalogs, set
+                                    incl_empty=True in the write_catalog task.
+Wed 16-03-2022 18:38:15:: INFO    : Calculating residual image after subtracting reconstructed gaussians
+Wed 16-03-2022 18:38:16:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/residual/Abell_85_Linpol_Freqmean.pybdsm.resid_gaus.fits
+Wed 16-03-2022 18:38:17:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/model/Abell_85_Linpol_Freqmean.pybdsm.model_gaus.fits
+Wed 16-03-2022 18:38:19:: INFO    : Statistics of the Gaussian residual image:
+                                            mean: 2.466e-05 (Jy/beam)
+                                        std. dev: 1.202e-05 (Jy/beam)
+                                            skew: 2.364
+                                        kurtosis: 10.559
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.sky_in
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.lsm
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.star
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.kvis.ann
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.ds9.reg
+Wed 16-03-2022 18:38:20:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.ds9.reg
+Wed 16-03-2022 18:38:21:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.FITS
+Wed 16-03-2022 18:38:21:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.FITS
+Wed 16-03-2022 18:38:21:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/misc/parameters_used
+Wed 16-03-2022 18:38:21:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_18.25.48/misc/parameters.sav
+Wed 16-03-2022 18:38:21:: INFO    : Internally derived parameters:
+                                        beam                 : (0.002140992, 0.001972343, -8.240263)
+                                        bmpersrc_th          : 18.688861556570757
+                                        frequency            : 1283791015.625
+                                        indir                : './'
+                                        minpix_isl           : 14
+                                        rms_box              : (541, 180)
+                                        rms_box_bright       : (216, 72)
+                                        thresh               : 'hard'
+Wed 16-03-2022 18:38:21:: INFO    : Writing Abell85_catalog_BDSF_output_freqmean.fits
+
+========================================================================
+Wed 16-03-2022 19:00:56:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Wed 16-03-2022 19:00:56:: INFO    : PyBDSF version 1.9.1
+Wed 16-03-2022 19:00:56:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        output_all           = True
+Wed 16-03-2022 19:00:56:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Wed 16-03-2022 19:00:56:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Wed 16-03-2022 19:00:56:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Wed 16-03-2022 19:00:56:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Wed 16-03-2022 19:00:56:: USERINFO: Number of channels ...................... : 1
+Wed 16-03-2022 19:00:56:: USERINFO: Number of Stokes parameters ............. : 1
+Wed 16-03-2022 19:00:56:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Wed 16-03-2022 19:00:56:: INFO    : Equinox of image is 2000.000000.
+Wed 16-03-2022 19:00:56:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Wed 16-03-2022 19:00:56:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Wed 16-03-2022 19:00:56:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Wed 16-03-2022 19:01:01:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Wed 16-03-2022 19:01:01:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Wed 16-03-2022 19:01:01:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Wed 16-03-2022 19:01:01:: INFO    : Estimated bmpersrc_th =   18.69
+Wed 16-03-2022 19:01:01:: INFO    : Parameter confused is True
+Wed 16-03-2022 19:01:01:: USERINFO: --> Calculating background rms and mean images
+Wed 16-03-2022 19:01:01:: INFO    : Estimated size of brightest source (pixels) = 5
+Wed 16-03-2022 19:01:01:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Wed 16-03-2022 19:01:09:: USERINFO: Derived rms_box (box size, step size) ... : (541, 180) pixels
+Wed 16-03-2022 19:01:09:: INFO    : Background rms and mean images computed
+Wed 16-03-2022 19:01:09:: USERINFO: --> Variation in rms image significant
+Wed 16-03-2022 19:01:09:: USERINFO: --> Using 2D map for background rms
+Wed 16-03-2022 19:01:09:: USERINFO: --> Variation in mean image significant
+Wed 16-03-2022 19:01:09:: USERINFO: --> Using 2D map for background mean
+Wed 16-03-2022 19:01:09:: USERINFO: Min/max values of background rms map .... : (2.20e-06, 1.74e-05) Jy/beam
+Wed 16-03-2022 19:01:09:: USERINFO: Min/max values of background mean map ... : (1.37e-05, 6.11e-05) Jy/beam
+Wed 16-03-2022 19:01:10:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Wed 16-03-2022 19:01:10:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Wed 16-03-2022 19:01:11:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Wed 16-03-2022 19:01:11:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Wed 16-03-2022 19:01:11:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Wed 16-03-2022 19:01:11:: USERINFO: Minimum number of pixels per island ..... : 14
+Wed 16-03-2022 19:01:13:: USERINFO: Number of islands found ................. : 214
+Wed 16-03-2022 19:13:13:: USERINFO: Total number of Gaussians fit to image .. : 363
+Wed 16-03-2022 19:13:13:: USERINFO: Total flux density in model ............. : 0.090 Jy
+Wed 16-03-2022 19:13:13:: WARNING : Total flux density in model is 0.01 times sum of pixels in input image. Large residuals may remain.
+Wed 16-03-2022 19:13:13:: USERINFO: --> Grouping Gaussians into sources
+Wed 16-03-2022 19:13:22:: USERINFO: Number of sources formed from Gaussians   : 235
+Wed 16-03-2022 19:13:22:: WARNING : All Gaussians were flagged for the following islands:
+                                        Island #0 (x=1, y=3591)
+                                        Island #4 (x=4, y=3605)
+                                        Island #6 (x=25, y=3616)
+                                        Island #8 (x=39, y=1821)
+                                        Island #10 (x=51, y=2)
+                                        Island #12 (x=54, y=48)
+                                        Island #13 (x=57, y=27)
+                                        Island #15 (x=68, y=42)
+                                        Island #41 (x=898, y=2061)
+                                        Island #42 (x=901, y=2104)
+                                        Island #46 (x=954, y=2006)
+                                        Island #49 (x=959, y=1913)
+                                        Island #50 (x=964, y=2118)
+                                        Island #52 (x=992, y=2061)
+                                        Island #55 (x=1151, y=1214)
+                                        Island #65 (x=1274, y=1543)
+                                        Island #66 (x=1279, y=1761)
+                                        Island #67 (x=1301, y=1562)
+                                        Island #68 (x=1293, y=1768)
+                                        Island #69 (x=1299, y=1737)
+                                        Island #70 (x=1312, y=1777)
+                                        Island #72 (x=1343, y=1694)
+                                        Island #76 (x=1388, y=1053)
+                                        Island #81 (x=1532, y=729)
+                                        Island #85 (x=1539, y=750)
+                                        Island #86 (x=1542, y=1114)
+                                        Island #89 (x=1562, y=1091)
+                                        Island #90 (x=1577, y=690)
+                                        Island #91 (x=1580, y=1098)
+                                        Island #92 (x=1594, y=1066)
+                                        Island #93 (x=1593, y=1078)
+                                        Island #95 (x=1675, y=1484)
+                                        Island #98 (x=1691, y=2501)
+                                        Island #99 (x=1741, y=1843)
+                                        Island #104 (x=1767, y=1895)
+                                        Island #105 (x=1766, y=1510)
+                                        Island #106 (x=1786, y=1500)
+                                        Island #107 (x=1795, y=1490)
+                                        Island #108 (x=1804, y=1804)
+                                        Island #109 (x=1814, y=1823)
+                                        Island #111 (x=1809, y=1794)
+                                        Island #113 (x=1817, y=1406)
+                                        Island #115 (x=1814, y=1853)
+                                        Island #117 (x=1826, y=1961)
+                                        Island #125 (x=1961, y=2238)
+                                        Island #129 (x=2019, y=1545)
+                                        Island #130 (x=2024, y=1620)
+                                        Island #133 (x=2037, y=3218)
+                                        Island #134 (x=2046, y=3206)
+                                        Island #135 (x=2047, y=3247)
+                                        Island #145 (x=2320, y=1336)
+                                        Island #154 (x=2511, y=729)
+                                        Island #162 (x=2670, y=3582)
+                                        Island #175 (x=3030, y=2191)
+                                        Island #177 (x=3045, y=2852)
+                                        Island #193 (x=3390, y=280)
+                                        Island #202 (x=3574, y=10)
+                                        Island #205 (x=3588, y=3605)
+                                        Island #211 (x=3607, y=66)
+                                        Island #212 (x=3611, y=48)
+                                        Island #213 (x=3616, y=34)
+                                    Please check these islands. If they are valid islands and
+                                    should be fit, try adjusting the flagging options (use
+                                    show_fit with "ch0_flagged=True" to see the flagged Gaussians)
+                                    or enabling the wavelet module (with "atrous_do=True").
+                                    To include empty islands in output source catalogs, set
+                                    incl_empty=True in the write_catalog task.
+Wed 16-03-2022 19:13:22:: INFO    : Calculating residual image after subtracting reconstructed gaussians
+Wed 16-03-2022 19:13:23:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/residual/Abell_85_Linpol_Freqmean.pybdsm.resid_gaus.fits
+Wed 16-03-2022 19:13:24:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/model/Abell_85_Linpol_Freqmean.pybdsm.model_gaus.fits
+Wed 16-03-2022 19:13:26:: INFO    : Statistics of the Gaussian residual image:
+                                            mean: 2.466e-05 (Jy/beam)
+                                        std. dev: 1.202e-05 (Jy/beam)
+                                            skew: 2.364
+                                        kurtosis: 10.559
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.sky_in
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.lsm
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.star
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.kvis.ann
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.ds9.reg
+Wed 16-03-2022 19:13:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.ds9.reg
+Wed 16-03-2022 19:13:27:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.FITS
+Wed 16-03-2022 19:13:27:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.FITS
+Wed 16-03-2022 19:13:27:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/misc/parameters_used
+Wed 16-03-2022 19:13:27:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/16Mar2022_19.00.56/misc/parameters.sav
+Wed 16-03-2022 19:13:27:: INFO    : Internally derived parameters:
+                                        beam                 : (0.002140992, 0.001972343, -8.240263)
+                                        bmpersrc_th          : 18.688861556570757
+                                        frequency            : 1283791015.625
+                                        indir                : './'
+                                        minpix_isl           : 14
+                                        rms_box              : (541, 180)
+                                        rms_box_bright       : (216, 72)
+                                        thresh               : 'hard'
+
+========================================================================
+Mon 21-03-2022 17:23:52:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Mon 21-03-2022 17:23:52:: INFO    : PyBDSF version 1.9.1
+Mon 21-03-2022 17:23:52:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        output_all           = True
+                                        rms_box              = (30, 10)
+Mon 21-03-2022 17:23:52:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Mon 21-03-2022 17:23:52:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Mon 21-03-2022 17:23:52:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Mon 21-03-2022 17:23:52:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Mon 21-03-2022 17:23:52:: USERINFO: Number of channels ...................... : 1
+Mon 21-03-2022 17:23:52:: USERINFO: Number of Stokes parameters ............. : 1
+Mon 21-03-2022 17:23:52:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Mon 21-03-2022 17:23:52:: INFO    : Equinox of image is 2000.000000.
+Mon 21-03-2022 17:23:52:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Mon 21-03-2022 17:23:53:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Mon 21-03-2022 17:23:53:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Mon 21-03-2022 17:23:58:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Mon 21-03-2022 17:23:58:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Mon 21-03-2022 17:23:58:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Mon 21-03-2022 17:23:58:: INFO    : Estimated bmpersrc_th =   18.69
+Mon 21-03-2022 17:23:58:: INFO    : Parameter confused is True
+Mon 21-03-2022 17:23:58:: USERINFO: --> Calculating background rms and mean images
+Mon 21-03-2022 17:23:58:: INFO    : Estimated size of brightest source (pixels) = 5
+Mon 21-03-2022 17:23:58:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Mon 21-03-2022 17:24:23:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Mon 21-03-2022 17:24:23:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Mon 21-03-2022 17:24:46:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Mon 21-03-2022 17:24:46:: INFO    : Background rms and mean images computed
+Mon 21-03-2022 17:24:46:: USERINFO: --> Variation in rms image significant
+Mon 21-03-2022 17:24:46:: USERINFO: --> Using 2D map for background rms
+Mon 21-03-2022 17:24:47:: USERINFO: --> Variation in mean image not significant
+Mon 21-03-2022 17:24:47:: USERINFO: --> Using constant background mean
+Mon 21-03-2022 17:24:47:: USERINFO: Min/max values of background rms map .... : (1.63e-06, 2.65e-04) Jy/beam
+Mon 21-03-2022 17:24:47:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Mon 21-03-2022 17:24:47:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/21Mar2022_17.23.53/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Mon 21-03-2022 17:24:48:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/21Mar2022_17.23.53/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Mon 21-03-2022 17:24:49:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/21Mar2022_17.23.53/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Mon 21-03-2022 17:24:49:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Mon 21-03-2022 17:24:49:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Mon 21-03-2022 17:24:49:: USERINFO: Minimum number of pixels per island ..... : 14
+Mon 21-03-2022 17:25:04:: USERINFO: Number of islands found ................. : 4881
+
+========================================================================
+Mon 21-03-2022 20:40:37:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Mon 21-03-2022 20:40:37:: INFO    : PyBDSF version 1.9.1
+Mon 21-03-2022 20:40:37:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        output_all           = True
+                                        rms_box              = (30, 10)
+Mon 21-03-2022 20:40:37:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Mon 21-03-2022 20:40:37:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Mon 21-03-2022 20:40:37:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Mon 21-03-2022 20:40:38:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Mon 21-03-2022 20:40:38:: USERINFO: Number of channels ...................... : 1
+Mon 21-03-2022 20:40:38:: USERINFO: Number of Stokes parameters ............. : 1
+Mon 21-03-2022 20:40:38:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Mon 21-03-2022 20:40:38:: INFO    : Equinox of image is 2000.000000.
+Mon 21-03-2022 20:40:38:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Mon 21-03-2022 20:40:38:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Mon 21-03-2022 20:40:38:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Mon 21-03-2022 20:40:43:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Mon 21-03-2022 20:40:43:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Mon 21-03-2022 20:40:43:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Mon 21-03-2022 20:40:43:: INFO    : Estimated bmpersrc_th =   18.69
+Mon 21-03-2022 20:40:43:: INFO    : Parameter confused is True
+Mon 21-03-2022 20:40:43:: USERINFO: --> Calculating background rms and mean images
+Mon 21-03-2022 20:40:43:: INFO    : Estimated size of brightest source (pixels) = 5
+Mon 21-03-2022 20:40:43:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Mon 21-03-2022 20:41:08:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Mon 21-03-2022 20:41:08:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Mon 21-03-2022 20:41:32:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Mon 21-03-2022 20:41:32:: INFO    : Background rms and mean images computed
+Mon 21-03-2022 20:41:32:: USERINFO: --> Variation in rms image significant
+Mon 21-03-2022 20:41:32:: USERINFO: --> Using 2D map for background rms
+Mon 21-03-2022 20:41:32:: USERINFO: --> Variation in mean image not significant
+Mon 21-03-2022 20:41:32:: USERINFO: --> Using constant background mean
+Mon 21-03-2022 20:41:32:: USERINFO: Min/max values of background rms map .... : (1.63e-06, 2.65e-04) Jy/beam
+Mon 21-03-2022 20:41:32:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Mon 21-03-2022 20:41:33:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/21Mar2022_20.40.38/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Mon 21-03-2022 20:41:34:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/21Mar2022_20.40.38/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Mon 21-03-2022 20:41:34:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/21Mar2022_20.40.38/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Mon 21-03-2022 20:41:35:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Mon 21-03-2022 20:41:35:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Mon 21-03-2022 20:41:35:: USERINFO: Minimum number of pixels per island ..... : 14
+Mon 21-03-2022 20:41:49:: USERINFO: Number of islands found ................. : 4881
+Mon 21-03-2022 20:58:00:: USERINFO: 
+                                    --> Aborted
+
+========================================================================
+Tue 22-03-2022 18:11:47:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Tue 22-03-2022 18:11:47:: INFO    : PyBDSF version 1.9.1
+Tue 22-03-2022 18:11:47:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        output_all           = True
+                                        rms_box              = (30, 10)
+Tue 22-03-2022 18:11:47:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Tue 22-03-2022 18:11:47:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Tue 22-03-2022 18:11:47:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Tue 22-03-2022 18:11:48:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Tue 22-03-2022 18:11:48:: USERINFO: Number of channels ...................... : 1
+Tue 22-03-2022 18:11:48:: USERINFO: Number of Stokes parameters ............. : 1
+Tue 22-03-2022 18:11:48:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Tue 22-03-2022 18:11:48:: INFO    : Equinox of image is 2000.000000.
+Tue 22-03-2022 18:11:48:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Tue 22-03-2022 18:11:48:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Tue 22-03-2022 18:11:48:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Tue 22-03-2022 18:11:53:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Tue 22-03-2022 18:11:53:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Tue 22-03-2022 18:11:53:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Tue 22-03-2022 18:11:53:: INFO    : Estimated bmpersrc_th =   18.69
+Tue 22-03-2022 18:11:53:: INFO    : Parameter confused is True
+Tue 22-03-2022 18:11:53:: USERINFO: --> Calculating background rms and mean images
+Tue 22-03-2022 18:11:53:: INFO    : Estimated size of brightest source (pixels) = 5
+Tue 22-03-2022 18:11:53:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Tue 22-03-2022 18:12:19:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Tue 22-03-2022 18:12:19:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Tue 22-03-2022 18:12:42:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Tue 22-03-2022 18:12:42:: INFO    : Background rms and mean images computed
+Tue 22-03-2022 18:12:42:: USERINFO: --> Variation in rms image significant
+Tue 22-03-2022 18:12:42:: USERINFO: --> Using 2D map for background rms
+Tue 22-03-2022 18:12:42:: USERINFO: --> Variation in mean image not significant
+Tue 22-03-2022 18:12:42:: USERINFO: --> Using constant background mean
+Tue 22-03-2022 18:12:42:: USERINFO: Min/max values of background rms map .... : (1.63e-06, 2.65e-04) Jy/beam
+Tue 22-03-2022 18:12:42:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Tue 22-03-2022 18:12:43:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.11.48/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Tue 22-03-2022 18:12:44:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.11.48/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Tue 22-03-2022 18:12:45:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.11.48/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Tue 22-03-2022 18:12:45:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Tue 22-03-2022 18:12:45:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Tue 22-03-2022 18:12:45:: USERINFO: Minimum number of pixels per island ..... : 14
+Tue 22-03-2022 18:12:59:: USERINFO: Number of islands found ................. : 4881
+Tue 22-03-2022 18:23:56:: USERINFO: 
+                                    --> Aborted
+
+========================================================================
+Tue 22-03-2022 18:26:00:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Tue 22-03-2022 18:26:00:: INFO    : PyBDSF version 1.9.1
+Tue 22-03-2022 18:26:00:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        ini_gausfit          = 'simple'
+                                        output_all           = True
+                                        rms_box              = (30, 10)
+Tue 22-03-2022 18:26:00:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Tue 22-03-2022 18:26:00:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Tue 22-03-2022 18:26:00:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Tue 22-03-2022 18:26:00:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Tue 22-03-2022 18:26:00:: USERINFO: Number of channels ...................... : 1
+Tue 22-03-2022 18:26:00:: USERINFO: Number of Stokes parameters ............. : 1
+Tue 22-03-2022 18:26:00:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Tue 22-03-2022 18:26:00:: INFO    : Equinox of image is 2000.000000.
+Tue 22-03-2022 18:26:00:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Tue 22-03-2022 18:26:00:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Tue 22-03-2022 18:26:00:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Tue 22-03-2022 18:26:05:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Tue 22-03-2022 18:26:05:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Tue 22-03-2022 18:26:05:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Tue 22-03-2022 18:26:05:: INFO    : Estimated bmpersrc_th =   18.69
+Tue 22-03-2022 18:26:05:: INFO    : Parameter confused is True
+Tue 22-03-2022 18:26:05:: USERINFO: --> Calculating background rms and mean images
+Tue 22-03-2022 18:26:05:: INFO    : Estimated size of brightest source (pixels) = 5
+Tue 22-03-2022 18:26:06:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Tue 22-03-2022 18:26:31:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Tue 22-03-2022 18:26:31:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Tue 22-03-2022 18:26:54:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Tue 22-03-2022 18:26:54:: INFO    : Background rms and mean images computed
+Tue 22-03-2022 18:26:55:: USERINFO: --> Variation in rms image significant
+Tue 22-03-2022 18:26:55:: USERINFO: --> Using 2D map for background rms
+Tue 22-03-2022 18:26:55:: USERINFO: --> Variation in mean image not significant
+Tue 22-03-2022 18:26:55:: USERINFO: --> Using constant background mean
+Tue 22-03-2022 18:26:55:: USERINFO: Min/max values of background rms map .... : (1.63e-06, 2.65e-04) Jy/beam
+Tue 22-03-2022 18:26:55:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Tue 22-03-2022 18:26:56:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.26.00/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Tue 22-03-2022 18:26:56:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.26.00/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Tue 22-03-2022 18:26:57:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.26.00/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Tue 22-03-2022 18:26:57:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Tue 22-03-2022 18:26:57:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Tue 22-03-2022 18:26:57:: USERINFO: Minimum number of pixels per island ..... : 14
+Tue 22-03-2022 18:27:12:: USERINFO: Number of islands found ................. : 4881
+Tue 22-03-2022 18:36:22:: USERINFO: 
+                                    --> Aborted
+
+========================================================================
+Tue 22-03-2022 18:36:48:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Tue 22-03-2022 18:36:48:: ERROR   : Parameter "peak_fit" is not defined properly. 
+                                     unknown type for bool variable
+
+========================================================================
+Tue 22-03-2022 18:38:17:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Tue 22-03-2022 18:38:17:: INFO    : PyBDSF version 1.9.1
+Tue 22-03-2022 18:38:17:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        ini_gausfit          = 'simple'
+                                        output_all           = True
+                                        peak_maxsize         = 10.0
+                                        rms_box              = (30, 10)
+Tue 22-03-2022 18:38:17:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Tue 22-03-2022 18:38:17:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Tue 22-03-2022 18:38:17:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Tue 22-03-2022 18:38:18:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Tue 22-03-2022 18:38:18:: USERINFO: Number of channels ...................... : 1
+Tue 22-03-2022 18:38:18:: USERINFO: Number of Stokes parameters ............. : 1
+Tue 22-03-2022 18:38:18:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Tue 22-03-2022 18:38:18:: INFO    : Equinox of image is 2000.000000.
+Tue 22-03-2022 18:38:18:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Tue 22-03-2022 18:38:18:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Tue 22-03-2022 18:38:18:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Tue 22-03-2022 18:38:23:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Tue 22-03-2022 18:38:23:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Tue 22-03-2022 18:38:23:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Tue 22-03-2022 18:38:23:: INFO    : Estimated bmpersrc_th =   18.69
+Tue 22-03-2022 18:38:23:: INFO    : Parameter confused is True
+Tue 22-03-2022 18:38:23:: USERINFO: --> Calculating background rms and mean images
+Tue 22-03-2022 18:38:23:: INFO    : Estimated size of brightest source (pixels) = 5
+Tue 22-03-2022 18:38:23:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Tue 22-03-2022 18:38:48:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Tue 22-03-2022 18:38:48:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Tue 22-03-2022 18:39:11:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Tue 22-03-2022 18:39:11:: INFO    : Background rms and mean images computed
+Tue 22-03-2022 18:39:11:: USERINFO: --> Variation in rms image significant
+Tue 22-03-2022 18:39:11:: USERINFO: --> Using 2D map for background rms
+Tue 22-03-2022 18:39:11:: USERINFO: --> Variation in mean image not significant
+Tue 22-03-2022 18:39:11:: USERINFO: --> Using constant background mean
+Tue 22-03-2022 18:39:11:: USERINFO: Min/max values of background rms map .... : (1.63e-06, 2.65e-04) Jy/beam
+Tue 22-03-2022 18:39:11:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Tue 22-03-2022 18:39:12:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.38.18/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Tue 22-03-2022 18:39:12:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.38.18/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Tue 22-03-2022 18:39:13:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.38.18/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Tue 22-03-2022 18:39:13:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Tue 22-03-2022 18:39:13:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Tue 22-03-2022 18:39:13:: USERINFO: Minimum number of pixels per island ..... : 14
+Tue 22-03-2022 18:39:27:: USERINFO: Number of islands found ................. : 4881
+Tue 22-03-2022 18:43:57:: USERINFO: 
+                                    --> Aborted
+
+========================================================================
+Tue 22-03-2022 18:45:53:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Tue 22-03-2022 18:45:53:: INFO    : PyBDSF version 1.9.1
+Tue 22-03-2022 18:45:53:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        ini_gausfit          = 'simple'
+                                        output_all           = True
+                                        peak_maxsize         = 10.0
+                                        rms_box              = (30, 10)
+Tue 22-03-2022 18:45:53:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Tue 22-03-2022 18:45:53:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Tue 22-03-2022 18:45:53:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 3617, 3617)
+Tue 22-03-2022 18:45:53:: USERINFO: Image size .............................. : (3617, 3617) pixels
+Tue 22-03-2022 18:45:53:: USERINFO: Number of channels ...................... : 1
+Tue 22-03-2022 18:45:53:: USERINFO: Number of Stokes parameters ............. : 1
+Tue 22-03-2022 18:45:53:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Tue 22-03-2022 18:45:53:: INFO    : Equinox of image is 2000.000000.
+Tue 22-03-2022 18:45:53:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Tue 22-03-2022 18:45:54:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Tue 22-03-2022 18:45:54:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Tue 22-03-2022 18:45:59:: INFO    : Raw mean (Stokes I) =  0.0250 mJy and raw rms =  0.0237 mJy 
+Tue 22-03-2022 18:45:59:: INFO    : sigma clipped mean (Stokes I) =  0.0168 mJy and  sigma clipped rms =  0.0106 mJy 
+Tue 22-03-2022 18:45:59:: USERINFO: Flux from sum of (non-blank) pixels ..... : 7.511 Jy
+Tue 22-03-2022 18:45:59:: INFO    : Estimated bmpersrc_th =   18.69
+Tue 22-03-2022 18:45:59:: INFO    : Parameter confused is True
+Tue 22-03-2022 18:45:59:: USERINFO: --> Calculating background rms and mean images
+Tue 22-03-2022 18:45:59:: INFO    : Estimated size of brightest source (pixels) = 5
+Tue 22-03-2022 18:45:59:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 108
+Tue 22-03-2022 18:46:25:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Tue 22-03-2022 18:46:25:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Tue 22-03-2022 18:46:48:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Tue 22-03-2022 18:46:48:: INFO    : Background rms and mean images computed
+Tue 22-03-2022 18:46:48:: USERINFO: --> Variation in rms image significant
+Tue 22-03-2022 18:46:48:: USERINFO: --> Using 2D map for background rms
+Tue 22-03-2022 18:46:48:: USERINFO: --> Variation in mean image not significant
+Tue 22-03-2022 18:46:48:: USERINFO: --> Using constant background mean
+Tue 22-03-2022 18:46:48:: USERINFO: Min/max values of background rms map .... : (1.63e-06, 2.65e-04) Jy/beam
+Tue 22-03-2022 18:46:48:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Tue 22-03-2022 18:46:49:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.45.54/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Tue 22-03-2022 18:46:49:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.45.54/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Tue 22-03-2022 18:46:50:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.45.54/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Tue 22-03-2022 18:46:50:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Tue 22-03-2022 18:46:50:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Tue 22-03-2022 18:46:50:: USERINFO: Minimum number of pixels per island ..... : 14
+Tue 22-03-2022 18:47:05:: USERINFO: Number of islands found ................. : 4881
+Tue 22-03-2022 18:50:13:: USERINFO: 
+                                    --> Aborted
+
+========================================================================
+Tue 22-03-2022 18:51:18:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Tue 22-03-2022 18:51:18:: INFO    : PyBDSF version 1.9.1
+Tue 22-03-2022 18:51:18:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        ini_gausfit          = 'simple'
+                                        output_all           = True
+                                        peak_maxsize         = 10.0
+                                        rms_box              = (30, 10)
+                                        trim_box             = (1000.0, 2000.0, 1000.0, 2000.0)
+Tue 22-03-2022 18:51:18:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Tue 22-03-2022 18:51:18:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Tue 22-03-2022 18:51:18:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 1000, 1000)
+Tue 22-03-2022 18:51:18:: USERINFO: Image size .............................. : (1000, 1000) pixels
+Tue 22-03-2022 18:51:18:: USERINFO: Number of channels ...................... : 1
+Tue 22-03-2022 18:51:18:: USERINFO: Number of Stokes parameters ............. : 1
+Tue 22-03-2022 18:51:18:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Tue 22-03-2022 18:51:18:: INFO    : Equinox of image is 2000.000000.
+Tue 22-03-2022 18:51:18:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Tue 22-03-2022 18:51:18:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Tue 22-03-2022 18:51:18:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Tue 22-03-2022 18:51:19:: INFO    : Raw mean (Stokes I) =  0.0172 mJy and raw rms =  0.0120 mJy 
+Tue 22-03-2022 18:51:19:: INFO    : sigma clipped mean (Stokes I) =  0.0156 mJy and  sigma clipped rms =  0.0032 mJy 
+Tue 22-03-2022 18:51:19:: USERINFO: Flux from sum of (non-blank) pixels ..... : 0.396 Jy
+Tue 22-03-2022 18:51:19:: INFO    : Estimated bmpersrc_th =    1.34
+Tue 22-03-2022 18:51:19:: INFO    : Parameter confused is True
+Tue 22-03-2022 18:51:19:: USERINFO: --> Calculating background rms and mean images
+Tue 22-03-2022 18:51:19:: INFO    : Estimated size of brightest source (pixels) = 5
+Tue 22-03-2022 18:51:19:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 84
+Tue 22-03-2022 18:51:21:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Tue 22-03-2022 18:51:21:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Tue 22-03-2022 18:51:23:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Tue 22-03-2022 18:51:23:: INFO    : Background rms and mean images computed
+Tue 22-03-2022 18:51:23:: USERINFO: --> Variation in rms image significant
+Tue 22-03-2022 18:51:23:: USERINFO: --> Using 2D map for background rms
+Tue 22-03-2022 18:51:23:: USERINFO: --> Variation in mean image not significant
+Tue 22-03-2022 18:51:23:: USERINFO: --> Using constant background mean
+Tue 22-03-2022 18:51:23:: USERINFO: Min/max values of background rms map .... : (1.70e-06, 9.10e-05) Jy/beam
+Tue 22-03-2022 18:51:23:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Tue 22-03-2022 18:51:23:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Tue 22-03-2022 18:51:23:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Tue 22-03-2022 18:51:23:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Tue 22-03-2022 18:51:23:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Tue 22-03-2022 18:51:23:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Tue 22-03-2022 18:51:23:: USERINFO: Minimum number of pixels per island ..... : 14
+Tue 22-03-2022 18:51:24:: USERINFO: Number of islands found ................. : 39
+Tue 22-03-2022 18:51:24:: USERINFO: Total number of Gaussians fit to image .. : 17
+Tue 22-03-2022 18:51:24:: USERINFO: Total flux density in model ............. : 0.006 Jy
+Tue 22-03-2022 18:51:24:: WARNING : Total flux density in model is 0.02 times sum of pixels in input image. Large residuals may remain.
+Tue 22-03-2022 18:51:24:: USERINFO: --> Grouping Gaussians into sources
+Tue 22-03-2022 18:51:24:: USERINFO: Number of sources formed from Gaussians   : 17
+Tue 22-03-2022 18:51:24:: WARNING : All Gaussians were flagged for the following islands:
+                                        Island #2 (x=185, y=924)
+                                        Island #3 (x=211, y=812)
+                                        Island #4 (x=235, y=245)
+                                        Island #5 (x=251, y=22)
+                                        Island #6 (x=274, y=543)
+                                        Island #8 (x=279, y=761)
+                                        Island #9 (x=297, y=583)
+                                        Island #10 (x=301, y=562)
+                                        Island #11 (x=312, y=777)
+                                        Island #13 (x=362, y=142)
+                                        Island #14 (x=382, y=465)
+                                        Island #15 (x=421, y=53)
+                                        Island #18 (x=537, y=184)
+                                        Island #21 (x=571, y=62)
+                                        Island #22 (x=580, y=111)
+                                        Island #23 (x=594, y=66)
+                                        Island #24 (x=593, y=78)
+                                        Island #25 (x=678, y=568)
+                                        Island #30 (x=785, y=852)
+                                        Island #33 (x=796, y=883)
+                                        Island #34 (x=817, y=924)
+                                        Island #35 (x=814, y=823)
+                                        Island #36 (x=817, y=406)
+                                        Island #37 (x=819, y=946)
+                                    Please check these islands. If they are valid islands and
+                                    should be fit, try adjusting the flagging options (use
+                                    show_fit with "ch0_flagged=True" to see the flagged Gaussians)
+                                    or enabling the wavelet module (with "atrous_do=True").
+                                    To include empty islands in output source catalogs, set
+                                    incl_empty=True in the write_catalog task.
+Tue 22-03-2022 18:51:25:: INFO    : Calculating residual image after subtracting reconstructed gaussians
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/residual/Abell_85_Linpol_Freqmean.pybdsm.resid_gaus.fits
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/model/Abell_85_Linpol_Freqmean.pybdsm.model_gaus.fits
+Tue 22-03-2022 18:51:25:: INFO    : Statistics of the Gaussian residual image:
+                                            mean: 1.695e-05 (Jy/beam)
+                                        std. dev: 6.782e-06 (Jy/beam)
+                                            skew: 12.823
+                                        kurtosis: 316.494
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.sky_in
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.lsm
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.star
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.kvis.ann
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.ds9.reg
+Tue 22-03-2022 18:51:25:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.ds9.reg
+Tue 22-03-2022 18:51:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.FITS
+Tue 22-03-2022 18:51:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.FITS
+Tue 22-03-2022 18:51:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/misc/parameters_used
+Tue 22-03-2022 18:51:26:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_18.51.18/misc/parameters.sav
+Tue 22-03-2022 18:51:26:: INFO    : Internally derived parameters:
+                                        beam                 : (0.002140992, 0.001972343, -8.240263)
+                                        bmpersrc_th          : 1.3388063737893843
+                                        frequency            : 1283791015.625
+                                        indir                : './'
+                                        minpix_isl           : 14
+                                        rms_box_bright       : (30, 10)
+                                        thresh               : 'hard'
+                                        trim_box             : [1000, 2000, 1000, 2000]
+Tue 22-03-2022 18:51:26:: INFO    : Writing Abell85_catalog_BDSF_output_freqmean_rmsbox.fits
+
+========================================================================
+Tue 22-03-2022 19:23:04:: INFO    : Processing Abell_85_Linpol_Freqmean.fits
+Tue 22-03-2022 19:23:04:: INFO    : PyBDSF version 1.9.1
+Tue 22-03-2022 19:23:04:: INFO    : Non-default input parameters:
+                                        filename             = 'Abell_85_Linpol_Freqmean.fits'
+                                        ini_gausfit          = 'simple'
+                                        output_all           = True
+                                        peak_maxsize         = 10.0
+                                        rms_box              = (30, 10)
+                                        trim_box             = (1000.0, 2000.0, 1000.0, 2000.0)
+Tue 22-03-2022 19:23:04:: USERINFO: --> Opened 'Abell_85_Linpol_Freqmean.fits'
+Tue 22-03-2022 19:23:04:: INFO    : Original data shape of Abell_85_Linpol_Freqmean.fits: (3617, 3617)
+Tue 22-03-2022 19:23:04:: INFO    : Final data shape (npol, nchan, x, y): (1, 1, 1000, 1000)
+Tue 22-03-2022 19:23:04:: USERINFO: Image size .............................. : (1000, 1000) pixels
+Tue 22-03-2022 19:23:04:: USERINFO: Number of channels ...................... : 1
+Tue 22-03-2022 19:23:04:: USERINFO: Number of Stokes parameters ............. : 1
+Tue 22-03-2022 19:23:04:: USERINFO: Beam shape (major, minor, pos angle) .... : (2.14099e-03, 1.97234e-03, -8.2) degrees
+Tue 22-03-2022 19:23:04:: INFO    : Equinox of image is 2000.000000.
+Tue 22-03-2022 19:23:04:: INFO    : Overwriting output files (if any) in directory ./Abell_85_Linpol_Freqmean_pybdsm/
+Tue 22-03-2022 19:23:04:: USERINFO: Frequency of image ...................... : 1283.791 MHz
+Tue 22-03-2022 19:23:04:: USERINFO: Number of blank pixels .................. : 0 (0.0%)
+Tue 22-03-2022 19:23:05:: INFO    : Raw mean (Stokes I) =  0.0172 mJy and raw rms =  0.0120 mJy 
+Tue 22-03-2022 19:23:05:: INFO    : sigma clipped mean (Stokes I) =  0.0156 mJy and  sigma clipped rms =  0.0032 mJy 
+Tue 22-03-2022 19:23:05:: USERINFO: Flux from sum of (non-blank) pixels ..... : 0.396 Jy
+Tue 22-03-2022 19:23:05:: INFO    : Estimated bmpersrc_th =    1.34
+Tue 22-03-2022 19:23:05:: INFO    : Parameter confused is True
+Tue 22-03-2022 19:23:05:: USERINFO: --> Calculating background rms and mean images
+Tue 22-03-2022 19:23:05:: INFO    : Estimated size of brightest source (pixels) = 5
+Tue 22-03-2022 19:23:05:: INFO    : Maximum extent of largest 10-sigma island using clipped rms (pixels) = 84
+Tue 22-03-2022 19:23:07:: WARNING : Negative values found in rms map interpolated with spline_rank = 3
+Tue 22-03-2022 19:23:07:: WARNING : Using spline_rank = 1 (bilinear interpolation) instead
+Tue 22-03-2022 19:23:09:: USERINFO: Using user-specified rms_box ............ : (30, 10) pixels
+Tue 22-03-2022 19:23:09:: INFO    : Background rms and mean images computed
+Tue 22-03-2022 19:23:09:: USERINFO: --> Variation in rms image significant
+Tue 22-03-2022 19:23:09:: USERINFO: --> Using 2D map for background rms
+Tue 22-03-2022 19:23:09:: USERINFO: --> Variation in mean image not significant
+Tue 22-03-2022 19:23:09:: USERINFO: --> Using constant background mean
+Tue 22-03-2022 19:23:09:: USERINFO: Min/max values of background rms map .... : (1.70e-06, 9.10e-05) Jy/beam
+Tue 22-03-2022 19:23:09:: USERINFO: Value of background mean ................ : 2e-05 Jy/beam
+Tue 22-03-2022 19:23:09:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/background/Abell_85_Linpol_Freqmean.pybdsm.rmsd_I.fits
+Tue 22-03-2022 19:23:09:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/background/Abell_85_Linpol_Freqmean.pybdsm.mean_I.fits
+Tue 22-03-2022 19:23:09:: INFO    : Writing  ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/background/Abell_85_Linpol_Freqmean.pybdsm.norm_I.fits
+Tue 22-03-2022 19:23:09:: USERINFO: --> Expected 5-sigma-clipped false detection rate < fdr_ratio
+Tue 22-03-2022 19:23:09:: USERINFO: --> Using sigma-clipping ('hard') thresholding
+Tue 22-03-2022 19:23:09:: USERINFO: Minimum number of pixels per island ..... : 14
+Tue 22-03-2022 19:23:10:: USERINFO: Number of islands found ................. : 39
+Tue 22-03-2022 19:23:10:: USERINFO: Total number of Gaussians fit to image .. : 17
+Tue 22-03-2022 19:23:10:: USERINFO: Total flux density in model ............. : 0.006 Jy
+Tue 22-03-2022 19:23:10:: WARNING : Total flux density in model is 0.02 times sum of pixels in input image. Large residuals may remain.
+Tue 22-03-2022 19:23:10:: USERINFO: --> Grouping Gaussians into sources
+Tue 22-03-2022 19:23:10:: USERINFO: Number of sources formed from Gaussians   : 17
+Tue 22-03-2022 19:23:10:: WARNING : All Gaussians were flagged for the following islands:
+                                        Island #2 (x=185, y=924)
+                                        Island #3 (x=211, y=812)
+                                        Island #4 (x=235, y=245)
+                                        Island #5 (x=251, y=22)
+                                        Island #6 (x=274, y=543)
+                                        Island #8 (x=279, y=761)
+                                        Island #9 (x=297, y=583)
+                                        Island #10 (x=301, y=562)
+                                        Island #11 (x=312, y=777)
+                                        Island #13 (x=362, y=142)
+                                        Island #14 (x=382, y=465)
+                                        Island #15 (x=421, y=53)
+                                        Island #18 (x=537, y=184)
+                                        Island #21 (x=571, y=62)
+                                        Island #22 (x=580, y=111)
+                                        Island #23 (x=594, y=66)
+                                        Island #24 (x=593, y=78)
+                                        Island #25 (x=678, y=568)
+                                        Island #30 (x=785, y=852)
+                                        Island #33 (x=796, y=883)
+                                        Island #34 (x=817, y=924)
+                                        Island #35 (x=814, y=823)
+                                        Island #36 (x=817, y=406)
+                                        Island #37 (x=819, y=946)
+                                    Please check these islands. If they are valid islands and
+                                    should be fit, try adjusting the flagging options (use
+                                    show_fit with "ch0_flagged=True" to see the flagged Gaussians)
+                                    or enabling the wavelet module (with "atrous_do=True").
+                                    To include empty islands in output source catalogs, set
+                                    incl_empty=True in the write_catalog task.
+Tue 22-03-2022 19:23:10:: INFO    : Calculating residual image after subtracting reconstructed gaussians
+Tue 22-03-2022 19:23:10:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/residual/Abell_85_Linpol_Freqmean.pybdsm.resid_gaus.fits
+Tue 22-03-2022 19:23:10:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/model/Abell_85_Linpol_Freqmean.pybdsm.model_gaus.fits
+Tue 22-03-2022 19:23:11:: INFO    : Statistics of the Gaussian residual image:
+                                            mean: 1.695e-05 (Jy/beam)
+                                        std. dev: 6.782e-06 (Jy/beam)
+                                            skew: 12.823
+                                        kurtosis: 316.494
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.sky_in
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.lsm
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.star
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.kvis.ann
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.ds9.reg
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.ds9.reg
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.gaul.FITS
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/catalogues/Abell_85_Linpol_Freqmean.pybdsm.srl.FITS
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/misc/parameters_used
+Tue 22-03-2022 19:23:11:: INFO    : Writing ./Abell_85_Linpol_Freqmean_pybdsm/22Mar2022_19.23.04/misc/parameters.sav
+Tue 22-03-2022 19:23:12:: INFO    : Internally derived parameters:
+                                        beam                 : (0.002140992, 0.001972343, -8.240263)
+                                        bmpersrc_th          : 1.3388063737893843
+                                        frequency            : 1283791015.625
+                                        indir                : './'
+                                        minpix_isl           : 14
+                                        rms_box_bright       : (30, 10)
+                                        thresh               : 'hard'
+                                        trim_box             : [1000, 2000, 1000, 2000]
+Tue 22-03-2022 19:23:12:: INFO    : Writing Abell85_catalog_BDSF_output_freqmean_rmsbox.fits
