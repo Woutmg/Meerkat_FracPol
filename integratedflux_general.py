@@ -9,6 +9,8 @@ import astropy.units as u
 import pyregion
 import tqdm 
 import argparse
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning, append=True)
 
 """
 @Author: Erik Osinga
@@ -36,7 +38,7 @@ def flatten(f):
     naxis=f[0].header['NAXIS']
     if naxis<2:
         raise RadioError('Can\'t make map from this')
-    if naxis is 2:
+    if naxis == 2:
         return fits.PrimaryHDU(header=f[0].header,data=f[0].data)
 
     w  = wcs.WCS(f[0].header)
@@ -80,13 +82,16 @@ def mask_source(fitsimage, ds9region, i, maskoutside=True):
     DATA -- np.array -- data array but with masking of source i
     """
     with fits.open(fitsimage) as hdu:
+        print('a')
         hduflat = flatten(hdu)
+        print('b')
         r = pyregion.open(ds9region)
+        print('c')
         myfilter = r.get_filter(header=hdu[0].header)
-
+        print('d')
         imshape = hdu[0].data.shape
-
         if len(imshape) == 2: # data only has two axes, X and Y
+            print("Two axes detected")
             manualmask = myfilter[i].mask(hdu[0].data)
         elif len(imshape) == 4: # data probably also has FREQ and STOKES axis
             print ("Image shape: %s. ASSUMING FREQ and STOKES axis are the first two axes. PLEASE CONFIRM"%(str(imshape)))
@@ -282,9 +287,9 @@ def uncertainty_flux(fitsimage, flux, Nbeams, maskarray_empty=None, rms=None, de
         masked_data[maskarray_empty] = 0
 
         # Find how many pixels this emprty region covers 
-        Npix = np.sum(np.invert(maskarray_empty))
+        Npix = np.nansum(np.invert(maskarray_empty))
         # Calculate the rms noise in this region
-        rmsnoise = np.sqrt((1./Npix)*(masked_data**2).sum())
+        rmsnoise = np.sqrt((1./Npix)*(masked_data**2).nansum())
         if verbose: print ("rms noise in given region: %.2f \muJy/beam"%(rmsnoise*1e6))
 
     else:
